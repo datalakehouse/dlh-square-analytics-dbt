@@ -1,0 +1,26 @@
+version: 2
+
+
+
+models:  
+  - name: W_CUSTOMERS_D
+    description: This is the customers dimension table
+    columns:
+      - name: CUSTOMER_ID        
+        tests:
+          - unique
+          - not_null
+        description: ID of the customer
+  - name: W_ORDERS_F
+    description: This is the fact orders table
+    columns:
+      - name: CREATED_AT
+        tests:          
+          - not_null
+        description: Date of the order
+      - name: ORDER_ID
+        tests:          
+          - not_null
+        description: ID of the order
+      - name: CUSTOMER_ID
+        description: ID of the customer
