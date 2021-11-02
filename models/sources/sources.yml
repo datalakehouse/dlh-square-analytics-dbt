@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: DEMO_SQUARE
+    tables:
+      - name: CUSTOMER
+      - name: ORDER_DISCOUNT
+      - name: ORDER_LINE_ITEM
+      - name: ORDERS
+
+
+  
