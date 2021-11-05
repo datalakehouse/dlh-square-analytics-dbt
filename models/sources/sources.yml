@@ -9,11 +9,9 @@ sources:
       - name: ORDER
       - name: PAYMENT
       - name: CATALOG_ITEM
-      - name: CATALOG_CATEGORY
-      - name: CATALOG_ITEM_MODIFIER_LIST_INFO
-      - name: CATALOG_MODIFIER_LIST
-      - name: CATALOG_MODIFIER_OVERRIDE
+      - name: CATALOG_CATEGORY                  
       - name: CATALOG_MODIFIER
+      - name: ORDER_LINE_ITEM_MODIFIER
 
 
   
