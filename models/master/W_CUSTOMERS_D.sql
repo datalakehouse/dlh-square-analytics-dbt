@@ -1,6 +1,6 @@
 {{ config (
   materialized= 'table',
-  schema= 'DATAFORM',
+  schema= 'SQUARE',
   tags= ["staging", "daily"]
 )
 }}
@@ -9,4 +9,4 @@
 SELECT
   *
 FROM
-  {{ref('W_CUSTOMER_STG')}} AS C
+  {{ref('V_CUSTOMER_STG')}} AS C

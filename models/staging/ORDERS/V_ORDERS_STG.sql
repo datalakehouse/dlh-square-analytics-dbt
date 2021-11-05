@@ -1,12 +1,12 @@
 {{ config (
   materialized= 'view',
-  schema= 'DATAFORM',
+  schema= 'SQUARE',
   tags= ["staging", "daily"]
 )
 }}
 
 WITH source AS (
-  SELECT * FROM  {{source('DEMO_SQUARE','ORDERS')}}
+  SELECT * FROM  {{source('OLD_SQUARE','ORDER')}}
 ),
 
 renamed_casted AS 

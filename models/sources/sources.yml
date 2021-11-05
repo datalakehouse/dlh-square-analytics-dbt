@@ -1,12 +1,13 @@
 version: 2
 
 sources:
-  - name: DEMO_SQUARE
+  - name: OLD_SQUARE
     tables:
       - name: CUSTOMER
       - name: ORDER_DISCOUNT
       - name: ORDER_LINE_ITEM
-      - name: ORDERS
+      - name: ORDER
+      - name: PAYMENT
 
 
   

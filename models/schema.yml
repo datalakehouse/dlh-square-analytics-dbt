@@ -19,7 +19,8 @@ models:
           - not_null
         description: Date of the order
       - name: ORDER_ID
-        tests:          
+        tests: 
+          - unique         
           - not_null
         description: ID of the order
       - name: CUSTOMER_ID
