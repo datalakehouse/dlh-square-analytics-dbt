@@ -1,5 +1,8 @@
 {{ config(
-    enabled=true
+    enabled=true,
+    materialized= 'view',
+    schema= 'SQUARE',
+    tags= ["staging", "daily"]
     ) 
 }}
  
