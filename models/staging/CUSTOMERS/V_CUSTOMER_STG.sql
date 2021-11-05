@@ -11,7 +11,7 @@ WITH source AS (
   FROM  	
     {{source('OLD_SQUARE','CUSTOMER')}}
 ),
-renamed_casted AS 
+rename AS 
 (  
     SELECT
         ID AS CUSTOMER_ID,
@@ -56,4 +56,4 @@ renamed_casted AS
 )
 
 
-SELECT * FROM renamed_casted
+SELECT * FROM rename

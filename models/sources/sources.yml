@@ -8,6 +8,8 @@ sources:
       - name: ORDER_LINE_ITEM
       - name: ORDER
       - name: PAYMENT
+      - name: CATALOG_ITEM
+      - name: CATALOG_CATEGORY
 
 
   

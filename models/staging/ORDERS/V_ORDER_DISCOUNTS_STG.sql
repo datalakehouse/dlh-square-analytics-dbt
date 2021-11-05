@@ -9,7 +9,7 @@ WITH source AS (
   SELECT * FROM  	{{source('OLD_SQUARE','ORDER_DISCOUNT')}}
 ),
 
-renamed_casted AS 
+rename AS 
 (
 SELECT 
 UID AS ORDERDISCOUNT_ID,
@@ -34,4 +34,4 @@ __DLH_IS_ACTIVE AS ORDERDISCOUNT___DLH_IS_ACTIVE
 FROM source
 )
 
-SELECT * FROM renamed_casted
+SELECT * FROM rename

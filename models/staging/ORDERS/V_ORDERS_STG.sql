@@ -9,7 +9,7 @@ WITH source AS (
   SELECT * FROM  {{source('OLD_SQUARE','ORDER')}}
 ),
 
-renamed_casted AS 
+rename AS 
 (
 SELECT 
 --PKs
@@ -63,4 +63,4 @@ SELECT
 FROM source
 )
 
-SELECT * FROM renamed_casted
+SELECT * FROM rename

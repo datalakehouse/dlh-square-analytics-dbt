@@ -9,7 +9,7 @@ WITH source AS (
   SELECT * FROM  {{source('OLD_SQUARE','ORDER_LINE_ITEM')}}
 ),
 
-renamed_casted AS 
+rename AS 
 (
   SELECT 
 --PRIMARY KEYS  
@@ -44,4 +44,4 @@ renamed_casted AS
 FROM source
 )
 
-SELECT * FROM renamed_casted
+SELECT * FROM rename
