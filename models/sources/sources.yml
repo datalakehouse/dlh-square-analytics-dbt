@@ -9,9 +9,13 @@ sources:
       - name: ORDER
       - name: PAYMENT
       - name: CATALOG_ITEM
+      - name: CATALOG_ITEM_VARIATION
       - name: CATALOG_CATEGORY                  
       - name: CATALOG_MODIFIER
+      - name: CATALOG_TAX
+      - name: CATALOG_DISCOUNT
       - name: ORDER_LINE_ITEM_MODIFIER
+      
 
 
   
