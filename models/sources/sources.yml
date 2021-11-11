@@ -1,7 +1,9 @@
 version: 2
 
-sources:
+sources:      
   - name: OLD_SQUARE
+    quoting:
+      identifier: true
     tables:
       - name: CUSTOMER
       - name: ORDER_DISCOUNT
@@ -15,7 +17,5 @@ sources:
       - name: CATALOG_TAX
       - name: CATALOG_DISCOUNT
       - name: ORDER_LINE_ITEM_MODIFIER
-      
-
-
-  
+      - name: LOCATION
+       

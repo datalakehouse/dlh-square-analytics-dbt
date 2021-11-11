@@ -16,11 +16,11 @@ rename as (
 
 SELECT
        --MD5 KEYS
-        MD5( ID ) AS K_CATALOG_CATEGORY_DLHK        
+        MD5( ID ) AS K_POS_CATALOG_CATEGORY_DLHK        
         --BUSINESS KEYS
-        ,ID AS K_CATALOG_CATEGORY_BK        
+        ,ID AS K_POS_CATALOG_CATEGORY_BK        
         --DESCRIPTION
-        ,NAME AS POS_PRODUCT_CATEGORY        
+        ,NAME AS A_POS_PRODUCT_CATEGORY        
         --metadata (MD)
         , CURRENT_TIMESTAMP AS MD_LOAD_DTS        
         , '{{invocation_id}}' AS MD_INTGR_ID
