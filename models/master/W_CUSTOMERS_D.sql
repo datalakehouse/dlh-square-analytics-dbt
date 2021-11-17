@@ -1,7 +1,8 @@
 {{ config (
   materialized= 'table',
   schema= 'SQUARE',
-  tags= ["staging", "daily"]
+  tags= ["staging", "daily"],
+  enabled=true
 )
 }}
 
