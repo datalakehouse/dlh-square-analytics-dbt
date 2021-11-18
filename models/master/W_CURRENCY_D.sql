@@ -2,7 +2,7 @@
   materialized= 'table',
   schema= 'SQUARE',
   tags= ["staging", "daily"],
-  enabled=true
+  transient=false
 )
 }}
 

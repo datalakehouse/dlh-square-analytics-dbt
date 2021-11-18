@@ -6,7 +6,7 @@
 }}
 
 WITH source AS (
-  SELECT * FROM  {{source('OLD_SQUARE','ORDER')}} AS A
+  SELECT * FROM  {{source('DEMO_SQUARE_ALT13','ORDER')}} AS A
 ),
 rename AS 
 (

@@ -1,5 +1,5 @@
 {{ config(
-    enabled=true,
+    transient=false,
     materialized= 'view',
     schema= 'SQUARE',
     tags= ["staging", "daily"]
@@ -8,7 +8,7 @@
  
 
 WITH source AS (
-  SELECT * FROM  {{source('OLD_SQUARE','CATALOG_TAX')}}
+  SELECT * FROM  {{source('DEMO_SQUARE_ALT13','CATALOG_TAX')}}
 ),
 
 rename as (

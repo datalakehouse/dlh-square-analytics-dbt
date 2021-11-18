@@ -1,7 +1,7 @@
 version: 2
 
 sources:      
-  - name: OLD_SQUARE
+  - name: DEMO_SQUARE_ALT13
     quoting:
       identifier: true
     tables:

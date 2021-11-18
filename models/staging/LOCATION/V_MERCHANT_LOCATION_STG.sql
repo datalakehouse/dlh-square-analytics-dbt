@@ -1,5 +1,7 @@
 {{ config(
-    enabled=true
+    materialized= 'view',
+    schema= 'SQUARE',
+    tags= ["staging", "daily"]
 ) }}
 
 
@@ -35,7 +37,7 @@ with rename as (
     ,'{{invocation_id}}' AS MD_INTGR_ID
 
   FROM 
-    {{ source('OLD_SQUARE', 'LOCATION')}} A    
+    {{ source('DEMO_SQUARE_ALT13', 'LOCATION')}} A    
 
 )
 

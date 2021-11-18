@@ -9,7 +9,7 @@ WITH source AS (
   SELECT 
   * 
   FROM  	
-    {{source('OLD_SQUARE','CUSTOMER')}}
+    {{source('DEMO_SQUARE_ALT13','CUSTOMER')}}
 ),
 rename AS 
 (   
