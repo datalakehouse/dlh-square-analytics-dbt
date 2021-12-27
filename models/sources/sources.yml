@@ -2,6 +2,8 @@ version: 2
 
 sources:      
   - name: DEMO_SQUARE_ALT13
+    database: DEVELOPER_SANDBOX
+    schema: DEMO_SQUARE_ALT13
     quoting:
       identifier: true
     tables:
