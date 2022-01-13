@@ -4,9 +4,9 @@
     config(
       target_database='DEVELOPER_SANDBOX',
       target_schema='DBT_SQUARE',
-      unique_key='K_POS_CUSTOMER_CUSTOMER_DLHK',
+      unique_key='K_POS_CUSTOMER_DLHK',
       strategy='timestamp',
-      updated_at='A_POS_CUSTOMER_UPDATED_AT_DTS',
+      updated_at='A_POS_UPDATED_AT_DTS',
     )
 }}
 

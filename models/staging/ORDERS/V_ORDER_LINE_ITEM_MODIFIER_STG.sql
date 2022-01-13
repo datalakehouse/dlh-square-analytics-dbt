@@ -14,18 +14,13 @@ SELECT DISTINCT K_POS_ORDER_DLHK,K_POS_LOCATION_BK  FROM  {{ref('V_ORDER_HEADER_
 source_order_line_item AS (
 SELECT DISTINCT A_POS_CATEGORY_NAME,K_POS_ORDER_DLHK,K_POS_CATALOG_OBJECT_DLHK,K_POS_CATALOG_OBJECT_BK, K_POS_ORDER_LINE_BK,A_POS_ORDER_LINE_NAME,A_POS_ORDER_LINE_VARIATION_NAME,K_POS_ORDER_BK FROM  {{ref('V_ORDER_LINE_ITEM_STG')}}
 ),
---checking if catalog_modifier exists on source. if not, set an empty table with columns required on join and select statement
-{% if table_exists %}
-
 source_catalog_modifier AS (
   SELECT * FROM  {{source('DEMO_SQUARE_ALT13','CATALOG_MODIFIER')}}
 ),
-{% else %}
 
 source_catalog_modifier AS (
   SELECT NULL AS ID, NULL AS NAME, NULL AS PRICE_MONEY_AMOUNT, NULL AS PRICE_MONEY_CURRENCY WHERE FALSE
 ),
-{% endif %}
 
 rename AS 
 (
