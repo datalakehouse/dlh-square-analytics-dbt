@@ -1,12 +1,12 @@
 {{ config (
   materialized= 'view',
-  schema= 'SQUARE',
+  schema=var('target_schema'),
   tags= ["staging", "daily"]
 )
 }}
 
 WITH source AS (
-  SELECT * FROM  {{source('DEMO_SQUARE_ALT13','ORDER')}} AS A
+  SELECT * FROM  {{source(var('source_schema'),'ORDER')}} AS A
 ),
 rename AS 
 (

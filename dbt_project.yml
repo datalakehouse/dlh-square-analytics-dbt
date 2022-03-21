@@ -2,12 +2,12 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: 'snowflake_aicd'
-version: '1.0.0'
+name: 'dlh_square'
+version: '0.1.0'
 config-version: 2
 
 # This setting configures which "profile" dbt uses for this project.
-profile: 'snowflake_aicd'
+profile: 'snowflake_aicg'
 
 
 # These configurations specify where dbt should look for different types of files.
@@ -32,8 +32,14 @@ clean-targets:         # directories to be removed by `dbt clean`
 # In this example config, we tell dbt to build all models in the example/ directory
 # as tables. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
+
+vars:    
+    source_database: DEVELOPER_SANDBOX
+    source_schema: DEMO_SQUARE_ALT13
+    target_schema: SQUARE
+
 models:
-  snowflake_aicd:
+  dlh_square:
       # Applies to all files under models/example/
      # example:
          # materialized: view
