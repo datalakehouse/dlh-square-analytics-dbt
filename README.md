@@ -21,7 +21,7 @@ The primary ouputs of this package are fact and dimension tables as listed below
 
 
 <img width="1657" alt="image" src="https://user-images.githubusercontent.com/29486566/159382981-6347e14d-84e3-46f8-ac6b-5e0c658d0ef2.png">
-
+*Data Lineage*
 
 Installation Instructions
 -------------------------
