@@ -28,13 +28,17 @@ Installation Instructions
 
 Check [dbt Hub](https://hub.getdbt.com) for the latest installation instructions, or [read the docs](https://docs.getdbt.com/docs/package-management) for more information on installing packages.
 
-Include in your packages.yml
+Include in your `packages.yml`
+
 
 ```yaml
 packages:
   - package: datalakehouse/dlh-square-analytics-dbt
     version: [">=0.1.0"]
 ```
+
+Run `dbt deps` to install the package. Packages get installed in the `dbt_packages` directory – by default this directory is ignored by git, to avoid duplicating the source code for the package.
+
 
 Configuration
 -------------
