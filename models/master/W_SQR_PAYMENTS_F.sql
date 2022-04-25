@@ -34,5 +34,5 @@ SELECT
     ,MD_HASH_COL
     ,MD_INTGR_ID
 FROM
-  {{ref('V_PAYMENT_STG')}} AS P
+  {{ref('V_SQR_PAYMENT_STG')}} AS P
   

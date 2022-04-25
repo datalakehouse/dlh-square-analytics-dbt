@@ -10,4 +10,4 @@
 SELECT
   *
 FROM
-  {{ref('V_CUSTOMER_STG')}} AS C
+  {{ref('V_SQR_CUSTOMER_STG')}} AS C

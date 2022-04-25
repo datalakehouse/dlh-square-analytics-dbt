@@ -10,6 +10,6 @@
     )
 }}
 
-select * from {{ ref('W_CUSTOMERS_D') }}
+select * from {{ ref('W_SQR_CUSTOMERS_D') }}
 
 {% endsnapshot %}

@@ -12,10 +12,10 @@ source_item_variation AS (
   SELECT * FROM  {{source(var('source_schema'),'CATALOG_ITEM_VARIATION')}}
 ),
 source_order AS (
-SELECT DISTINCT K_POS_ORDER_DLHK,K_POS_LOCATION_BK  FROM  {{ref('V_ORDER_HEADER_STG')}}
+SELECT DISTINCT K_POS_ORDER_DLHK,K_POS_LOCATION_BK  FROM  {{ref('V_SQR_ORDER_HEADER_STG')}}
 ),
 source_category AS (
-  SELECT * FROM  {{ref('V_CATALOG_CATEGORY_STG')}}
+  SELECT * FROM  {{ref('V_SQR_CATALOG_CATEGORY_STG')}}
 ),
 source_item AS (
   SELECT * FROM  {{source(var('source_schema'),'CATALOG_ITEM')}}
