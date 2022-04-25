@@ -3,7 +3,7 @@ version: 2
 
 
 models:  
-  - name: W_CUSTOMERS_D
+  - name: W_SQR_CUSTOMERS_D
     description: This is the customers dimension table
     columns:
       - name: K_POS_CUSTOMER_DLHK        
@@ -11,7 +11,7 @@ models:
           - unique
           - not_null
         description: DataLakeHouse key of the customer           
-  - name: W_CATALOG_ITEM_D
+  - name: W_SQR_CATALOG_ITEM_D
     description: This is the catalog item dimension table
     columns:
       - name: K_POS_CATALOG_OBJECT_HASH_DLHK        
@@ -19,7 +19,7 @@ models:
           - unique
           - not_null
         description: DataLakeHouse key of the item
-  - name: W_CURRENCY_D
+  - name: W_SQR_CURRENCY_D
     description: This is the currency dimension table
     columns:
       - name: K_CURRENCY_DLHK        
@@ -27,7 +27,7 @@ models:
           - unique
           - not_null
         description: DataLakeHouse key of the currency
-  - name: W_MERCHANT_LOCATION_D
+  - name: W_SQR_MERCHANT_LOCATION_D
     description: This is the merchant location dimension table
     columns:
       - name: K_MERCH_LOC_DLHK        
