@@ -26,14 +26,14 @@ The primary ouputs of this package are fact and dimension tables as listed below
 Installation Instructions
 -------------------------
 
-Check [dbt Hub](https://hub.getdbt.com) for the latest installation instructions, or [read the docs](https://docs.getdbt.com/docs/package-management) for more information on installing packages.
+Check [dbt Hub](https://hub.getdbt.com/datalakehouse/dlh_square/latest/) for the latest installation instructions, or [read the docs](https://docs.getdbt.com/docs/package-management) for more information on installing packages.
 
 Include in your `packages.yml`
 
 
 ```yaml
 packages:
-  - package: datalakehouse/dlh-square-analytics-dbt
+  - package: datalakehouse/dlh_square
     version: [">=0.1.0"]
 ```
 
