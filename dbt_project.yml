@@ -43,6 +43,9 @@ vars:
 
 models:
   dlh_square:
+  
+snapshots:
+  dlh_square:
       # Applies to all files under models/example/
      # example:
          # materialized: view
