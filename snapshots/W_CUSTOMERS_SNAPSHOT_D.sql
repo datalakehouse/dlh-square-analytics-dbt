@@ -2,7 +2,6 @@
 
 {{
     config(
-      target_database='DEVELOPER_SANDBOX',      
       unique_key='K_POS_CUSTOMER_DLHK',
       strategy='timestamp',
       updated_at='A_POS_UPDATED_AT_DTS',
