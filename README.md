@@ -12,12 +12,12 @@ The primary ouputs of this package are fact and dimension tables as listed below
 
 |        Type       |        Model       |        Raw tables involved       |
 |:----------------:|:----------------:|----------------|
-|Dimension| W_CATALOG_ITEM_D       | CATALOG_CATEGORY<br>CATALOG_MODIFIER<br>CATALOG_ITEM_VARIATION<br>CATALOG_ITEM<br>ORDER_LINE_ITEM<br>|
-|Dimension| W_CURRENCY_D         | Manually built |
-|Dimension| W_MERCHANT_LOCATION_D       | LOCATION |
-|Dimension| W_CUSTOMERS_D      | CUSTOMER|
-|Fact| W_ORDERS_F | ORDER<br>ORDER_LINE_ITEM<br>ORDER_LINE_ITEM_MODIFIER|
-|Fact| W_PAYMENTS_F          | PAYMENT|
+|Dimension| W_SQR_CATALOG_ITEM_D       | CATALOG_CATEGORY<br>CATALOG_MODIFIER<br>CATALOG_ITEM_VARIATION<br>CATALOG_ITEM<br>ORDER_LINE_ITEM<br>|
+|Dimension| W_SQR_CURRENCY_D         | Manually built |
+|Dimension| W_SQR_MERCHANT_LOCATION_D       | LOCATION |
+|Dimension| W_SQR_CUSTOMERS_D      | CUSTOMER|
+|Fact| W_SQR_ORDERS_F | ORDER<br>ORDER_LINE_ITEM<br>ORDER_LINE_ITEM_MODIFIER|
+|Fact| W_SQR_PAYMENTS_F          | PAYMENT|
 
 | ![159382981-6347e14d-84e3-46f8-ac6b-5e0c658d0ef2.png](https://user-images.githubusercontent.com/29486566/159382981-6347e14d-84e3-46f8-ac6b-5e0c658d0ef2.png) | 
 |:--:| 
@@ -26,14 +26,14 @@ The primary ouputs of this package are fact and dimension tables as listed below
 Installation Instructions
 -------------------------
 
-Check [dbt Hub](https://hub.getdbt.com) for the latest installation instructions, or [read the docs](https://docs.getdbt.com/docs/package-management) for more information on installing packages.
+Check [dbt Hub](https://hub.getdbt.com/datalakehouse/dlh_square/latest/) for the latest installation instructions, or [read the docs](https://docs.getdbt.com/docs/package-management) for more information on installing packages.
 
 Include in your `packages.yml`
 
 
 ```yaml
 packages:
-  - package: datalakehouse/dlh-square-analytics-dbt
+  - package: datalakehouse/dlh_square
     version: [">=0.1.0"]
 ```
 

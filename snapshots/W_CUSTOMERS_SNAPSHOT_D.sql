@@ -2,8 +2,7 @@
 
 {{
     config(
-      target_database='DEVELOPER_SANDBOX',
-      target_schema='DBT_SQUARE',
+      target_schema=var('target_schema'),
       unique_key='K_POS_CUSTOMER_DLHK',
       strategy='timestamp',
       updated_at='A_POS_UPDATED_AT_DTS',
