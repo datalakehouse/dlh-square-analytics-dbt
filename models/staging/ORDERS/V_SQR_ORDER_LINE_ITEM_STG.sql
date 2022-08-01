@@ -1,15 +1,15 @@
 {{ config (
   materialized= 'view',
-  schema=var('target_schema'),
+  schema=var('target_schema', 'SQUARE'),
   tags= ["staging", "daily"]
 )
 }}
 
 WITH source AS (
-  SELECT * FROM  {{source(var('source_schema'),'ORDER_LINE_ITEM')}}
+  SELECT * FROM  {{source(var('source_schema', 'DEMO_SQUARE_ALT13'),'ORDER_LINE_ITEM')}}
 ),
 source_item_variation AS (
-  SELECT * FROM  {{source(var('source_schema'),'CATALOG_ITEM_VARIATION')}}
+  SELECT * FROM  {{source(var('source_schema', 'DEMO_SQUARE_ALT13'),'CATALOG_ITEM_VARIATION')}}
 ),
 source_order AS (
 SELECT DISTINCT K_POS_ORDER_DLHK,K_POS_LOCATION_BK  FROM  {{ref('V_SQR_ORDER_HEADER_STG')}}
@@ -18,7 +18,7 @@ source_category AS (
   SELECT * FROM  {{ref('V_SQR_CATALOG_CATEGORY_STG')}}
 ),
 source_item AS (
-  SELECT * FROM  {{source(var('source_schema'),'CATALOG_ITEM')}}
+  SELECT * FROM  {{source(var('source_schema', 'DEMO_SQUARE_ALT13'),'CATALOG_ITEM')}}
 ),
 rename AS 
 (

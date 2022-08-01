@@ -1,6 +1,6 @@
 {{ config(
     materialized= 'view',
-    schema=var('target_schema'),
+    schema=schema=var('target_schema', 'SQUARE'),
     tags= ["staging", "daily"]
 ) }}
 
@@ -37,7 +37,7 @@ with rename as (
     ,'{{invocation_id}}' AS MD_INTGR_ID
 
   FROM 
-    {{ source('DEMO_SQUARE_ALT13', 'LOCATION')}} A    
+    {{ source(var('source_schema', 'DEMO_SQUARE_ALT13'), 'LOCATION')}} A    
 
 )
 

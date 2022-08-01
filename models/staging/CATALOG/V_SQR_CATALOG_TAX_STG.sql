@@ -1,14 +1,14 @@
 {{ config(
     transient=false,
     materialized= 'view',
-    schema=var('target_schema'),
+    schema=schema=var('target_schema', 'SQUARE'),
     tags= ["staging", "daily"]
     ) 
 }}
  
 
 WITH source AS (
-  SELECT * FROM  {{source(var('source_schema'),'CATALOG_TAX')}}
+  SELECT * FROM  {{source(var('source_schema', 'DEMO_SQUARE_ALT13'),'CATALOG_TAX')}}
 ),
 
 rename as (

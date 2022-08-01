@@ -1,6 +1,6 @@
 {{ config (
   materialized= 'table',
-  schema=var('target_schema'),
+  schema=var('target_schema', 'SQUARE'),
   tags= ["staging", "daily"],
   transient=false
 )
