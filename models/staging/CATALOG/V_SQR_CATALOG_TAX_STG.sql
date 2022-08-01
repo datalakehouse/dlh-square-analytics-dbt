@@ -1,7 +1,7 @@
 {{ config(
     transient=false,
     materialized= 'view',
-    schema=schema=var('target_schema', 'SQUARE'),
+    schema=var('target_schema', 'SQUARE'),
     tags= ["staging", "daily"]
     ) 
 }}

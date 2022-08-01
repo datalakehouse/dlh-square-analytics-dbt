@@ -2,7 +2,7 @@
 
 {{
     config(
-      target_schema=var('target_schema'),
+      target_schema=var('target_schema', 'SQUARE'),
       unique_key='K_POS_CUSTOMER_DLHK',
       strategy='timestamp',
       updated_at='A_POS_UPDATED_AT_DTS',
