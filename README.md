@@ -2,7 +2,7 @@
 
 This dbt package:
 
-*   Contains a DBT dimensional model based on square data from [Datalakehouse’s](https://www.datalakehouse.io/) connector.
+*   Contains a DBT dimensional model based on square data from [DataLakehouse.io](https://www.datalakehouse.io/) connector.
 *   The main use of this package is to provide a stable snowflake dimensional model that will provide useful insights.
     
 
